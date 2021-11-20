@@ -39,7 +39,7 @@ function App() {
   return (
     <div className="App">
       <h1>Monitoramento da umidade do solo</h1>
-      <iframe width={widthScreen} height={heightScreen} style={{ border: '1px solid #cccccc' }} src={`https://thingspeak.com/channels/1577427/charts/1?title=Umidade%20X%20Data&xaxis=Data&yaxis=Umidade&width=${widthScreen}&height=${heightScreen}&bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=${rangeDadosHistorico}&type=${tipoGrafico}&update=15%22%3E`}> </iframe>
+      <iframe title="Umidade solo" width={widthScreen} height={heightScreen} style={{ border: '1px solid #cccccc' }} src={`https://thingspeak.com/channels/1577427/charts/1?title=Umidade%20X%20Data&xaxis=Data&yaxis=Umidade&width=${widthScreen}&height=${heightScreen}&bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=${rangeDadosHistorico}&type=${tipoGrafico}&update=15%22%3E`}> </iframe>
       <div className="row justify-content-center">
         <div className="mt-2 col-md-2 col-sm-4">
           <FloatingLabel label="Tipo de gráfico">
